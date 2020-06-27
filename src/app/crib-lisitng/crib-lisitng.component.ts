@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { cribs } from '../data/cribs';
+import { HttpClient } from '@angular/common/http';
+//import 'rxjs/add/operator/map';
+
 
 @Component({
   selector: 'app-crib-lisitng',
@@ -8,13 +10,22 @@ import { cribs } from '../data/cribs';
 })
 export class CribLisitngComponent implements OnInit {
 
-  cribs: Array<any> = cribs;
+  cribs: Array<any>;
+  error: string;
   
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-  //make an http request
-  }
-
-
+  
+  this.http.get('data/cribs.json')
+    .subscribe(
+    data => this.cribs = data,
+    error => this.error =error.statusText
+  );
 }
+  
+  
+}
+
+
+

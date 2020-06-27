@@ -1,4 +1,4 @@
-export const cribs = [
+ [
 {
     "id": 1,
     "type": "condo",
@@ -42,6 +42,6 @@ export const cribs = [
     "bathrooms": 3,
     "area": 1250,
     "image": "crib4"
-},
-];
+}
+]
     

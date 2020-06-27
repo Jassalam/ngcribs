@@ -4,9 +4,10 @@ type: string,
 price: number,
 address: string,
 description: string,
-bedroom: number,
-bathroom: number,
+bedrooms: number,
+bathrooms: number,
 area: number,
-image: string
+image: string,
+showDetails: boolean
 }
 

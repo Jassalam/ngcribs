@@ -88,7 +88,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstraps/dist/css/bootstrap.min.css",
+              "node_modules/bootstraps/dist/css/bootstrap.css"
             ],
             "scripts": []
           }
@@ -119,6 +121,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ngcribs"
+    }
+  },
+  "defaultProject": "ngcribs",
+  "cli": {
+    "analytics": "250c46b7-7205-4fcc-8d89-2c55170e8962"
+  }
 }
